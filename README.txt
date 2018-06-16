@@ -12,3 +12,5 @@ A few notes:
 
 - Trying to put in extremely long string of text may result in a crash. (Other than that
   it works well though.)
+  
+- The build can be found in the release file.
