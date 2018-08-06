@@ -118,18 +118,19 @@ namespace RuneTranslator2 {
 			this->label1->AutoSize = true;
 			this->label1->Location = System::Drawing::Point(9, 174);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(131, 17);
+			this->label1->Size = System::Drawing::Size(43, 17);
 			this->label1->TabIndex = 6;
-			this->label1->Text = L"English Characters:";
+			this->label1->Text = L"Input:";
+			this->label1->Click += gcnew System::EventHandler(this, &GForm::label1_Click);
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Location = System::Drawing::Point(601, 174);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(53, 17);
+			this->label2->Size = System::Drawing::Size(55, 17);
 			this->label2->TabIndex = 7;
-			this->label2->Text = L"Runes:";
+			this->label2->Text = L"Output:";
 			// 
 			// comboBox2
 			// 
@@ -202,6 +203,7 @@ namespace RuneTranslator2 {
 			this->ShowIcon = false;
 			this->SizeGripStyle = System::Windows::Forms::SizeGripStyle::Show;
 			this->Text = L"Gjallarhorn";
+			this->Load += gcnew System::EventHandler(this, &GForm::GForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -390,7 +392,7 @@ namespace RuneTranslator2 {
 						}
 						if ((textBoxL->Text)[i] == 'j' || (textBoxL->Text)[i] == 'J')
 						{
-							textBoxR->Text += L"(ᛦ)";
+							textBoxR->Text += L"[ᛦ]";
 						}
 						if ((textBoxL->Text)[i] == 'k' || (textBoxL->Text)[i] == 'K')
 						{
@@ -456,6 +458,18 @@ namespace RuneTranslator2 {
 						{
 							textBoxR->Text += L"ᛎ";
 						}
+						if ((textBoxL->Text)[i] == 'ð' || (textBoxL->Text)[i] == 'Ð')
+						{
+							textBoxR->Text += L"ᚧ";
+						}
+						if ((textBoxL->Text)[i] == 'Æ' || (textBoxL->Text)[i] == 'æ' || (textBoxL->Text)[i] == 'Ä' || (textBoxL->Text)[i] == 'ä')
+						{
+							textBoxR->Text += L"[ᛅ/ᛆ]";
+						}
+						if ((textBoxL->Text)[i] == 'Ø' || (textBoxL->Text)[i] == 'ø' || (textBoxL->Text)[i] == 'Ö' || (textBoxL->Text)[i] == 'ö')
+						{
+							textBoxR->Text += L"ᚯ";
+						}
 					}
 				}
 			}
@@ -468,6 +482,7 @@ namespace RuneTranslator2 {
 
 				bool skip2 = false;
 				bool skip3 = false;
+				bool skip4 = false;
 
 				for (int i = 0; i < (textBoxL->Text)->Length; i++)
 				{
@@ -484,7 +499,7 @@ namespace RuneTranslator2 {
 					}
 
 					//Special
-					if (((textBoxL->Text)[i] == L'(') && ((textBoxL->Text)[i + 1] == L'ᛦ') && ((textBoxL->Text)[i + 2] == L')'))
+					if (((textBoxL->Text)[i] == L'[') && ((textBoxL->Text)[i + 1] == L'ᛦ') && ((textBoxL->Text)[i + 2] == L']'))
 					{
 						textBoxR->Text += "j";
 						skip3 = true;
@@ -708,6 +723,18 @@ namespace RuneTranslator2 {
 						if ((textBoxL->Text)[i] == L'ᛎ')
 						{
 							textBoxR->Text += "z";
+						}
+						if ((textBoxL->Text)[i] == L'ᚧ')
+						{
+							textBoxR->Text += "ð";
+						}
+						if ((textBoxL->Text)[i] == L'ᚯ')
+						{
+							textBoxR->Text += "ø";
+						}
+						if ((textBoxL->Text)[i] == L'ᛅ' || (textBoxL->Text)[i] == L'ᛆ')
+						{
+							textBoxR->Text += "[æ/ä]";
 						}
 					}
 				}
@@ -975,19 +1002,19 @@ namespace RuneTranslator2 {
 					}
 					if ((textBoxL->Text)[i] == 'k' || (textBoxL->Text)[i] == 'K')
 					{
-						textBoxR->Text += L"(ᚳ)";
+						textBoxR->Text += L"[ᚳ]";
 					}
 					if ((textBoxL->Text)[i] == 'q' || (textBoxL->Text)[i] == 'Q')
 					{
-						textBoxR->Text += L"(ᚳᚢ)";
+						textBoxR->Text += L"[ᚳᚢ]";
 					}
 					if ((textBoxL->Text)[i] == 'z' || (textBoxL->Text)[i] == 'Z')
 					{
-						textBoxR->Text += L"(ᛋᛖ)";
+						textBoxR->Text += L"[ᛋᛖ]";
 					}
 					if ((textBoxL->Text)[i] == 'v' || (textBoxL->Text)[i] == 'V')
 					{
-						textBoxR->Text += L"(ᚹ)";
+						textBoxR->Text += L"[ᚹ]";
 					}
 				}
 			}
@@ -1027,14 +1054,14 @@ namespace RuneTranslator2 {
 					//Special
 					if((textBoxL->Text)->Length > (i + 2))
 					{
-						if (((textBoxL->Text)[i] == L'(') && ((textBoxL->Text)[i + 1] == L'ᚳ') && ((textBoxL->Text)[i + 2] == L')'))
+						if (((textBoxL->Text)[i] == L'[') && ((textBoxL->Text)[i + 1] == L'ᚳ') && ((textBoxL->Text)[i + 2] == L']'))
 						{
 							textBoxR->Text += "k";
 							skip3 = true;
 							continue;
 						}
 
-						if (((textBoxL->Text)[i] == L'(') && ((textBoxL->Text)[i + 1] == L'ᚹ') && ((textBoxL->Text)[i + 2] == L')'))
+						if (((textBoxL->Text)[i] == L'[') && ((textBoxL->Text)[i + 1] == L'ᚹ') && ((textBoxL->Text)[i + 2] == L']'))
 						{
 							textBoxR->Text += "v";
 							skip3 = true;
@@ -1043,13 +1070,13 @@ namespace RuneTranslator2 {
 					}
 					if ((textBoxL->Text)->Length > (i + 3))
 					{
-						if (((textBoxL->Text)[i] == L'(') && ((textBoxL->Text)[i + 1] == L'ᛋ') && ((textBoxL->Text)[i + 2] == L'ᛖ') && ((textBoxL->Text)[i + 3] == L')'))
+						if (((textBoxL->Text)[i] == L'[') && ((textBoxL->Text)[i + 1] == L'ᛋ') && ((textBoxL->Text)[i + 2] == L'ᛖ') && ((textBoxL->Text)[i + 3] == L']'))
 						{
 							textBoxR->Text += "z";
 							skip4 = true;
 							continue;
 						}
-						if (((textBoxL->Text)[i] == L'(') && ((textBoxL->Text)[i + 1] == L'ᚳ') && ((textBoxL->Text)[i + 2] == L'ᚢ') && ((textBoxL->Text)[i + 3] == L')'))
+						if (((textBoxL->Text)[i] == L'[') && ((textBoxL->Text)[i + 1] == L'ᚳ') && ((textBoxL->Text)[i + 2] == L'ᚢ') && ((textBoxL->Text)[i + 3] == L']'))
 						{
 							textBoxR->Text += "q";
 							skip4 = true;
@@ -1467,7 +1494,7 @@ namespace RuneTranslator2 {
 
 					if ((textBoxL->Text)[i] == 'c' || (textBoxL->Text)[i] == 'C')
 					{
-						textBoxR->Text += L"(ᚲ)"; //Might change it later
+						textBoxR->Text += L"[ᚲ]"; //Might change it later
 					}
 
 					if ((textBoxL->Text)[i] == 'd' || (textBoxL->Text)[i] == 'D')
@@ -1522,7 +1549,7 @@ namespace RuneTranslator2 {
 
 					if ((textBoxL->Text)[i] == 'q' || (textBoxL->Text)[i] == 'Q')
 					{
-						textBoxR->Text += L"(ᚲᚢ)";
+						textBoxR->Text += L"[ᚲᚢ]";
 					}
 
 					if ((textBoxL->Text)[i] == 'r' || (textBoxL->Text)[i] == 'R')
@@ -1552,7 +1579,7 @@ namespace RuneTranslator2 {
 
 					if ((textBoxL->Text)[i] == 'x' || (textBoxL->Text)[i] == 'X')
 					{
-						textBoxR->Text += L"(ᚲᛊ)";
+						textBoxR->Text += L"[ᚲᛊ]";
 					}
 
 					if ((textBoxL->Text)[i] == 'y' || (textBoxL->Text)[i] == 'Y')
@@ -1563,6 +1590,11 @@ namespace RuneTranslator2 {
 					if ((textBoxL->Text)[i] == 'z' || (textBoxL->Text)[i] == 'Z')
 					{
 						textBoxR->Text += L"ᛉ";
+					}
+
+					if ((textBoxL->Text)[i] == 'Ï' || (textBoxL->Text)[i] == 'ï')
+					{
+						textBoxR->Text += L"ᛇ";
 					}
 				}
 			}
@@ -1605,7 +1637,7 @@ namespace RuneTranslator2 {
 					//Special
 					if ((textBoxL->Text)->Length > i + 2)
 					{
-						if ((textBoxL->Text)[i] == L'(' && (textBoxL->Text)[i + 1] == L'ᚲ' && (textBoxL->Text)[i + 2] == L')')
+						if ((textBoxL->Text)[i] == L'[' && (textBoxL->Text)[i + 1] == L'ᚲ' && (textBoxL->Text)[i + 2] == L']')
 						{
 							textBoxR->Text += "c";
 							skip3 = true;
@@ -1615,13 +1647,13 @@ namespace RuneTranslator2 {
 
 					if ((textBoxL->Text)->Length > i + 3)
 					{
-						if ((textBoxL->Text)[i] == L'(' && (textBoxL->Text)[i + 1] == L'ᚲ' && (textBoxL->Text)[i + 2] == L'ᛊ' && (textBoxL->Text)[i + 3] == L')')
+						if ((textBoxL->Text)[i] == L'[' && (textBoxL->Text)[i + 1] == L'ᚲ' && (textBoxL->Text)[i + 2] == L'ᛊ' && (textBoxL->Text)[i + 3] == L']')
 						{
 							textBoxR->Text += "x";
 							skip4 = true;
 							continue;
 						}
-						if ((textBoxL->Text)[i] == L'(' && (textBoxL->Text)[i + 1] == L'ᚲ' && (textBoxL->Text)[i + 2] == L'ᚢ' && (textBoxL->Text)[i + 3] == L')')
+						if ((textBoxL->Text)[i] == L'[' && (textBoxL->Text)[i + 1] == L'ᚲ' && (textBoxL->Text)[i + 2] == L'ᚢ' && (textBoxL->Text)[i + 3] == L']')
 						{
 							textBoxR->Text += "q";
 							skip4 = true;
@@ -1771,7 +1803,7 @@ namespace RuneTranslator2 {
 					}
 					if ((textBoxL->Text)[i] == L'ᚹ')
 					{
-						textBoxR->Text += "(w/v)";
+						textBoxR->Text += "[w/v]";
 					}
 					if ((textBoxL->Text)[i] == L'ᚺ')
 					{
@@ -1787,7 +1819,7 @@ namespace RuneTranslator2 {
 					}
 					if ((textBoxL->Text)[i] == L'ᛃ')
 					{
-						textBoxR->Text += "(j/y)";
+						textBoxR->Text += "[j/y]";
 					}
 					if ((textBoxL->Text)[i] == L'ᛈ')
 					{
@@ -1837,6 +1869,10 @@ namespace RuneTranslator2 {
 					{
 						textBoxR->Text += "o";
 					}
+					if ((textBoxL->Text)[i] == L'ᛇ')
+					{
+						textBoxR->Text += "ï";
+					}
 				}
 			}
 		}
@@ -1876,6 +1912,12 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 			MedToEng();
 		}
 	}
+}
+private: System::Void GForm_Load(System::Object^  sender, System::EventArgs^  e)
+{
+}
+private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e)
+{
 }
 };
 }
