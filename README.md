@@ -1,6 +1,11 @@
 
 ________________________________________________________________________________
 Notes:
+- You'll need to get the rune keyboard to actually (or rather, efficiently) trasnlate
+  old messages on rocks to english. The rune keyboard can be found in the Pre-Compiled
+  folder. For old norse to english, this is great:
+  http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
+
 - The program supports three alphabets to translate into and out of Elder Futhark runes,
   Anglo Saxon runes, and Medieval runes. This tool should be able to translate any runes
   you find on a rock or something to english characters, but say something if it doesn't.
