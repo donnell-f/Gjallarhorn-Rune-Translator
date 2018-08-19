@@ -1,20 +1,15 @@
 
 ________________________________________________________________________________
-Notes:
-- You'll need to get the rune keyboard to actually (or rather, efficiently) trasnlate
-  old messages on rocks to english. The rune keyboard can be found in the Pre-Compiled
-  folder. For old norse to english, this is great:
-  http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
-
-- The program supports three alphabets to translate into and out of Elder Futhark runes,
-  Anglo Saxon runes, and Medieval runes. This tool should be able to translate any runes
-  you find on a rock or something to english characters, but say something if it doesn't.
-
-- Some runes do not perfectly match up to a letter, so when that happens the sound is
-  aproximated. Example: Q might be approximated to (cu)
-
-- Trying to put in extremely long string of text may result in a crash. (Other than that
-  it works well though.)
+Info:
+- This program can convert all the runic languages they have Unicoe symbols for
+  into english (I think the proper term is roman) characters. 
   
-- The build can be found in the release file.
+- If you are translating english characters into runes then there are a few
+  extra steps you may need to take to get a perfect runic conversion. To find
+  out more about what I mean, check this out:
+  https://www.vikingrune.com/write-in-futhark-runes-old-norse-guide/
+  
+- Any runes you find on old rocks or something probably will need to be
+  translated from old norse to english. For when you need to do that, this is
+  great: http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
 ________________________________________________________________________________
