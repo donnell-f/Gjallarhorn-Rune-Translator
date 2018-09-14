@@ -1,7 +1,7 @@
 
 ________________________________________________________________________________
 Info:
-- This program can convert all the runic languages they have Unicoe symbols for
+- This program can convert all the runic languages they have Unicode symbols for
   into english (I think the proper term is roman) characters. 
   
 - If you are translating english characters into runes then there are a few
