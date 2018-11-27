@@ -1,3 +1,4 @@
+EDIT: This program is outdated. Remake is here: https://gitlab.com/ForsakenChili/fosc-symbol-converter
 
 ________________________________________________________________________________
 Info:
