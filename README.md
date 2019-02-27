@@ -1,4 +1,4 @@
-EDIT: This program is outdated. Remake is here: https://gitlab.com/ForsakenChili/fosc-symbol-converter
+EDIT: This program is outdated, I remade it and now it's called FOSC. Please do not download Gjallarhorn.
 
 ________________________________________________________________________________
 Info:
