@@ -1,4 +1,4 @@
-EDIT: This program is outdated, I remade it and now it's called FOSC. Please do not download Gjallarhorn.
+EDIT: This program is somehwat broken. I recommend that you use FOSC instead (another program I made).
 
 ________________________________________________________________________________
 Info:
