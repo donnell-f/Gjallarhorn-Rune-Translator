@@ -1,16 +1,34 @@
-EDIT: This program is somehwat broken. I recommend that you use FOSC instead (another program I made).
+# Gjallarhorn | ᚷᛃᚨᛚᛚᚨᚱᚺᛟᚱᚾ | ᚴᚢᛅᛚᛚᛅᚱᚼᚢᚱᚾ | ᚷᛄᚪᛚᛚᚪᚱᚻᚩᚱᚾ #
 
-________________________________________________________________________________
-Info:
-- This program can convert all the runic languages they have Unicode symbols for
-  into english (I think the proper term is roman) characters. 
-  
-- If you are translating english characters into runes then there are a few
-  extra steps you may need to take to get a perfect runic conversion. To find
-  out more about what I mean, check this out:
-  https://www.vikingrune.com/write-in-futhark-runes-old-norse-guide/
-  
-- Any runes you find on old rocks or something probably will need to be
-  translated from old norse to english. For when you need to do that, this is
-  great: http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
-________________________________________________________________________________
+Gjallarhorn transliterates runes into Roman letters so that you can try to decipher a message from an old relic, inscribe Norse curse words onto bathroom stalls, or just send psudo-cryptographic messages to your friend.
+
+Gjallarhorn transliterates Elder Futhark, Younger Futhark, and Anglo-Saxon Futhorc. The runic alphabets have been designed to transliterate to Old Norse, Old English, and Modern English, though you may find luck with others.
+
+If you have even the slightest critique please report it in the issues tab. Issues are cool, they make me feel like I know what I'm doing.
+
+
+
+# How to Use It #
+
+Every transliteration goes something like this:
+- In the first combo box, select whether you are transliterating to or from runes.
+- In the second combo box, decide which runes you are transliterating to or from.
+- Transliteration will appear in the output textbox. In there you can edit the output, dechipher characters with alternative transliterations, and etc.
+- Your next transliteration is only a clear button away.
+
+If you want your output formatted a certain way, see the settings menu for some postprocessing options.
+
+
+
+# Extra Info #
+
+If you're trying to translate into perfect runic script, out might want to check out this article:
+https://www.vikingrune.com/write-in-futhark-runes-old-norse-guide/
+It explains some common runic grammar.
+
+When deciphering runes off of relics, this Old Norse dictionary might come in handy:
+http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
+
+Possible Upcoming Features:
+- Rune keyboard
+- Linux replica
