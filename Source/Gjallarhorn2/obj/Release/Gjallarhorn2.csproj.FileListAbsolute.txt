@@ -1,0 +1,9 @@
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\bin\Release\Gjallarhorn2.exe.config
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\bin\Release\Gjallarhorn2.exe
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\bin\Release\Gjallarhorn2.pdb
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\obj\Release\Gjallarhorn2.Form1.resources
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\obj\Release\Gjallarhorn2.Properties.Resources.resources
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\obj\Release\Gjallarhorn2.csproj.GenerateResource.cache
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\obj\Release\Gjallarhorn2.csproj.CoreCompileInputs.cache
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\obj\Release\Gjallarhorn2.exe
+C:\Users\dbful\source\repos\Gjallarhorn2\Gjallarhorn2\obj\Release\Gjallarhorn2.pdb
