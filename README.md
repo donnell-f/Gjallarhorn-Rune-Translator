@@ -30,5 +30,4 @@ When deciphering runes off of relics, this Old Norse dictionary might come in ha
 http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
 
 Possible Upcoming Features:
-- Rune keyboard
 - Linux replica
