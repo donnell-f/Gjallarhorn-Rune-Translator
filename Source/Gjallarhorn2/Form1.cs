@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Gjallarhorn2
 {
+
+    //Primary class.
     public partial class Form1 : Form
     {
         Converter conv = new Converter();
@@ -24,6 +26,8 @@ namespace Gjallarhorn2
 
         }
 
+        //Conversion button click function. 
+        //When clicked this function decides which translation algorithm to run on the input.
         private void convButton_Click(object sender, EventArgs e)
         {
             string inp = inputTB.Text;
@@ -87,10 +91,404 @@ namespace Gjallarhorn2
             inputTB.Text = "";
             outputTB.Text = "";
         }
+
+        private void toKeyboard_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void button75_Click(object sender, EventArgs e)
+        {
+            //This is the back button for the rune keyboard tab. Idk why it's named like this.
+
+            tabControl1.SelectTab(0);
+        }
+
+
+        private void keyboardClear_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text = "";
+        }
+
+
+        //Click functions for rune keyboard input.
+        //*L o n g*   regions.
+
+        #region EF_Keyboard
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚠ";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚢ";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚦ";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚨ";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚱ";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚲ";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚷ";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚹ";
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚺ";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚾ";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛁ";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛃ";
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛈ";
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛇ";
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛉ";
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛊ";
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛏ";
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛒ";
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛖ";
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛗ";
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛚ";
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛜ";
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛞ";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛟ";
+        }
+
+
+        #endregion
+
+        #region YF_Keyboard
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚠ";
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚢ";
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚦ";
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚬ";
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚱ";
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚴ";
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚼ";
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚾ";
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛁ";
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛅ";
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛦ";
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛋ";
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛏ";
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛒ";
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛘ";
+
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛚ";
+        }
+
+
+
+        #endregion
+
+        #region AS_Keyboard
+
+        private void button68_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚠ";
+        }
+
+        private void button67_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚢ";
+        }
+
+        private void button65_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚦ";
+        }
+
+        private void button63_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚩ";
+        }
+
+        private void button66_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚱ";
+        }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚳ";
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚷ";
+        }
+
+        private void button60_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚹ";
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚻ";
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚾ";
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛁ";
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛡ";
+        }
+
+        private void button74_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛄ";
+        }
+
+        private void button73_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛇ";
+        }
+
+        private void button71_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛈ";
+        }
+
+        private void button48_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛉ";
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛋ";
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚴ";
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛏ";
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛒ";
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛖ";
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛗ";
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛚ";
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛝ";
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛟ";
+        }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛞ";
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚪ";
+        }
+
+        private void button69_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚫ";
+        }
+
+        private void button70_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚣ";
+        }
+
+        private void button72_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛠ";
+        }
+
+        #endregion
+
     }
 
+    //Converter class.
+    //Stores all of the conversion functions on one convienient class.
+    //You can tell what a function translates for by looking at its name.
     public class Converter
     {
+        //This function is a bit special.
+        //I had to make this because the toLower(); method didn't make special characters lowercase.
         public static string special_tolower(string input)
         {
             input = input.ToLower();
@@ -108,6 +506,8 @@ namespace Gjallarhorn2
 
             return input;
         }
+        //
+        
         public string LetToEF(string input, bool rembrackets, bool oddlets, bool spacecolon)
         {
             //Init:
