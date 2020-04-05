@@ -46,6 +46,10 @@ namespace Gjallarhorn2
                 {
                     outputTB.Text = conv.LetToAS(inp, aproxBrackets.Checked, oddLetters.Checked, spacesColons.Checked);
                 }
+                else if (alphabetControl.Text == "Medieval")
+                {
+                    outputTB.Text = conv.LetToMD(inp, aproxBrackets.Checked, oddLetters.Checked, spacesColons.Checked);
+                }
                 else
                 {
                     outputTB.Text = "No runic alphabet selected!";
@@ -64,6 +68,10 @@ namespace Gjallarhorn2
                 else if (alphabetControl.Text == "Anglo Saxon")
                 {
                     outputTB.Text = conv.AStoLet(inp, aproxBrackets.Checked, oddLetters.Checked, spacesColons.Checked);
+                }
+                else if (alphabetControl.Text == "Medieval")
+                {
+                    outputTB.Text = conv.MDtoLet(inp, aproxBrackets.Checked, oddLetters.Checked, spacesColons.Checked);
                 }
                 else
                 {
@@ -501,8 +509,9 @@ namespace Gjallarhorn2
             input = input.Replace("Æ", "æ");
             input = input.Replace("Œ", "œ");
             input = input.Replace("Ʀ", "ʀ");
-            input = input.Replace("A", "a");
             input = input.Replace("ʒ", "ɛ");
+            input = input.Replace("Ä", "ä");
+            input = input.Replace("Ö", "ö");
 
             return input;
         }
@@ -520,6 +529,7 @@ namespace Gjallarhorn2
             {
                 input = input.Replace("ck", "[ᚲ]");
                 input = input.Replace("c", "[ᚲ]");
+                input = input.Replace("qu", "[ᚲᚢ]");
                 input = input.Replace("q", "[ᚲᚢ]");
                 input = input.Replace("v", "[ᚠ]");
                 input = input.Replace("x", "[ᚲᛊ]");
@@ -529,6 +539,7 @@ namespace Gjallarhorn2
             {
                 input = input.Replace("ck", "ᚲ");
                 input = input.Replace("c", "ᚲ");
+                input = input.Replace("qu", "ᚲᚢ");
                 input = input.Replace("q", "ᚲᚢ");
                 input = input.Replace("v", "ᚠ");
                 input = input.Replace("x", "ᚲᛊ");
@@ -539,7 +550,9 @@ namespace Gjallarhorn2
             //Direct Translations:
             input = input.Replace("f", "ᚠ");
             input = input.Replace("u", "ᚢ");
+            input = input.Replace("[þ,ð]", "ᚦ");
             input = input.Replace("þ", "ᚦ");
+            input = input.Replace("ð", "ᚦ");
             input = input.Replace("a", "ᚨ");
             input = input.Replace("r", "ᚱ");
             input = input.Replace("k", "ᚲ");
@@ -587,7 +600,7 @@ namespace Gjallarhorn2
             //Direct Translations:
             input = input.Replace("ᚠ", "f");
             input = input.Replace("ᚢ", "u");
-            input = input.Replace("ᚦ", "þ");
+            input = input.Replace("ᚦ", "[þ,ð]");
             input = input.Replace("ᚨ", "a");
             input = input.Replace("ᚱ", "r");
             input = input.Replace("ᚲ", "k");
@@ -635,6 +648,7 @@ namespace Gjallarhorn2
             {
                 input = input.Replace("ck", "[ᚴ]");
                 input = input.Replace("c", "[ᚴ]");
+                input = input.Replace("qu", "[ᚴᚢ]");
                 input = input.Replace("q", "[ᚴᚢ]");
                 input = input.Replace("x", "[ᚴᛋ]");
                 input = input.Replace("j", "[ᚢ]");
@@ -644,6 +658,7 @@ namespace Gjallarhorn2
             {
                 input = input.Replace("ck", "ᚴ");
                 input = input.Replace("c", "ᚴ");
+                input = input.Replace("qu", "ᚴᚢ");
                 input = input.Replace("q", "ᚴᚢ");
                 input = input.Replace("x", "ᚴᛋ");
                 input = input.Replace("j", "ᚢ");
@@ -755,6 +770,7 @@ namespace Gjallarhorn2
             {
                 input = input.Replace("ck", "[ᚳ]");
                 input = input.Replace("k", "[ᚳ]");
+                input = input.Replace("qu", "[ᚳᚢ]");
                 input = input.Replace("q", "[ᚳᚢ]");
                 input = input.Replace("v", "[ᚠ]");
                 input = input.Replace("z", "[ᛇ]");
@@ -763,6 +779,7 @@ namespace Gjallarhorn2
             {
                 input = input.Replace("ck", "ᚳ");
                 input = input.Replace("k", "ᚳ");
+                input = input.Replace("qu", "ᚳᚢ");
                 input = input.Replace("q", "ᚳᚢ");
                 input = input.Replace("v", "ᚠ");
                 input = input.Replace("z", "ᛇ");
@@ -772,7 +789,9 @@ namespace Gjallarhorn2
             input = input.Replace("ea", "ᛠ");
             input = input.Replace("f", "ᚠ");
             input = input.Replace("u", "ᚢ");
+            input = input.Replace("[þ,ð]", "ᚦ");
             input = input.Replace("þ", "ᚦ");
+            input = input.Replace("ð", "ᚦ");
             input = input.Replace("o", "ᚩ");
             input = input.Replace("r", "ᚱ");
             input = input.Replace("c", "ᚳ");
@@ -781,13 +800,15 @@ namespace Gjallarhorn2
             input = input.Replace("h", "ᚻ");
             input = input.Replace("n", "ᚾ");
             input = input.Replace("i", "ᛁ");
-            input = input.Replace("j", "[ᛡ/ᛄ]");
+            if (!rembrackets) { input = input.Replace("j", "[ᛡ/ᛄ]"); }
+                         else { input = input.Replace("j", "ᛡ"); }
+            input = input.Replace("[ï,ɛ]", "ᛇ");
             input = input.Replace("ï", "ᛇ");
             input = input.Replace("ɛ", "ᛇ");
-            input = input.Replace("[ï,ɛ]", "ᛇ");
             input = input.Replace("p", "ᛈ");
             input = input.Replace("x", "ᛉ");
-            input = input.Replace("s", "[ᛋ,ᚴ]");
+            if (!rembrackets) { input = input.Replace("s", "[ᛋ,ᚴ]"); }
+                         else { input = input.Replace("s", "ᛋ"); }
             input = input.Replace("t", "ᛏ");
             input = input.Replace("b", "ᛒ");
             input = input.Replace("e", "ᛖ");
@@ -799,6 +820,7 @@ namespace Gjallarhorn2
             input = input.Replace("a", "ᚪ");
             input = input.Replace("æ", "ᚫ");
             input = input.Replace("y", "ᚣ");
+            
 
             //Special Cases:
             if (spacecolon)
@@ -821,7 +843,7 @@ namespace Gjallarhorn2
             //Direct Translations:
             input = input.Replace("ᚠ", "f");
             input = input.Replace("ᚢ", "u");
-            input = input.Replace("ᚦ", "þ");
+            input = input.Replace("ᚦ", "[þ,ð]");
             input = input.Replace("ᚩ", "o");
             input = input.Replace("ᚱ", "r");
             input = input.Replace("ᚳ", "c");
@@ -851,6 +873,118 @@ namespace Gjallarhorn2
             input = input.Replace("ᚫ", "æ");
             input = input.Replace("ᚣ", "y");
             input = input.Replace("ᛠ", "ea");
+
+            //Special Cases:
+            if (oddlets)
+            {
+                input = input.Replace("þ", "th");
+                input = input.Replace("ŋ", "ng");
+            }
+            if (spacecolon)
+            {
+                input = input.Replace(":", " ");
+            }
+
+            return input;
+        }
+
+        public string LetToMD(string input, bool rembrackets, bool oddlets, bool spacecolon)
+        {
+            //Init
+            input = special_tolower(input);
+            input = input.Replace("th", "þ");
+
+            //Aproximated Translations:
+            if (!rembrackets)
+            {
+                input = input.Replace("j", "[ᚤ]");
+            }
+            else
+            {
+                input = input.Replace("j", "ᚤ");
+            }
+
+            //Direct Translations:
+            input = input.Replace("a", "ᛆ");
+            input = input.Replace("b", "ᛒ");
+            input = input.Replace("c", "ᛍ");
+            input = input.Replace("z", "ᛍ");
+            if (!rembrackets) { input = input.Replace("s", "[ᛍ,ᛋ]"); } else { input = input.Replace("s", "ᛋ"); }
+            input = input.Replace("d", "ᛑ");
+            input = input.Replace("þ", "ᚦ");
+            input = input.Replace("ð", "ᚧ");
+            input = input.Replace("e", "ᛂ");
+            input = input.Replace("f", "ᚠ");
+            input = input.Replace("g", "ᚵ");
+            input = input.Replace("h", "ᚼ");
+            input = input.Replace("i", "ᛁ");
+            input = input.Replace("k", "ᚴ");
+            input = input.Replace("q", "ᚴ");
+            input = input.Replace("l", "ᛚ");
+            input = input.Replace("m", "ᛘ");
+            input = input.Replace("n", "ᚿ");
+            input = input.Replace("o", "ᚮ");
+            input = input.Replace("p", "ᛔ");
+            input = input.Replace("r", "ᚱ");
+            input = input.Replace("t", "ᛐ");
+            input = input.Replace("u", "ᚢ");
+            if (!rembrackets) { input = input.Replace("v", "[ᚡ,ᚢ]"); } else { input = input.Replace("v", "ᚡ"); }
+            input = input.Replace("w", "ᚥ");
+            input = input.Replace("x", "ᛪ");
+            if (!rembrackets) { input = input.Replace("y", "[ᛦ,ᚤ]"); } else { input = input.Replace("y", "ᛦ"); }
+            input = input.Replace("[æ/ä]", "ᛅ");
+            input = input.Replace("æ", "ᛅ");
+            input = input.Replace("ä", "ᛅ");
+            input = input.Replace("[ö/ø]", "ᚯ");
+            input = input.Replace("ö", "ᚯ");
+            input = input.Replace("ø", "ᚯ");
+
+            //Special Cases:
+            if (spacecolon)
+            {
+                input = input.Replace(" ", ":");
+            }
+
+            return input;
+        }
+
+        public string MDtoLet(string input, bool rembrackets, bool oddlets, bool spacecolon)
+        {
+            //Aproximated Translations:
+            input = input.Replace("[ᚤ]", "j");
+
+            //Direct Translations:
+            input = input.Replace("ᛆ", "a");
+            input = input.Replace("ᛒ", "b");
+            input = input.Replace("[ᛍ,ᛋ]", "s");
+            input = input.Replace("ᛋ", "s");
+            input = input.Replace("ᛍ", "[c,s,z]");
+            input = input.Replace("ᛑ", "d");
+            input = input.Replace("ᚦ", "þ");
+            input = input.Replace("ᚧ", "ð");
+            input = input.Replace("ᛂ", "e");
+            input = input.Replace("ᚠ", "f");
+            input = input.Replace("ᚵ", "g");
+            input = input.Replace("ᚼ", "h");
+            input = input.Replace("ᛁ", "i");
+            input = input.Replace("ᚴ", "[k,q]");
+            input = input.Replace("ᛚ", "l");
+            input = input.Replace("ᛘ", "m");
+            input = input.Replace("ᚿ", "n");
+            input = input.Replace("ᚮ", "o");
+            input = input.Replace("ᛔ", "p");
+            input = input.Replace("ᚱ", "r");
+            input = input.Replace("ᛐ", "t");
+            input = input.Replace("[ᚡ,ᚢ]", "v");
+            input = input.Replace("ᚡ", "v");
+            input = input.Replace("ᚢ", "[u,v]");
+            input = input.Replace("ᚥ", "w");
+            input = input.Replace("ᛪ", "x");
+            input = input.Replace("[ᛦ,ᚤ]", "y");
+            input = input.Replace("ᛦ", "y");
+            input = input.Replace("ᚤ", "y");
+            input = input.Replace("ᛅ", "[æ/ä]");
+            input = input.Replace("ᚯ", "[ö/ø]");
 
             //Special Cases:
             if (oddlets)

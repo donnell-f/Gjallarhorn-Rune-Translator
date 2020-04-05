@@ -227,7 +227,8 @@
             this.alphabetControl.Items.AddRange(new object[] {
             "Elder Futhark",
             "Younger Futhark",
-            "Anglo Saxon"});
+            "Anglo Saxon",
+            "Medieval"});
             this.alphabetControl.Location = new System.Drawing.Point(315, 394);
             this.alphabetControl.Name = "alphabetControl";
             this.alphabetControl.Size = new System.Drawing.Size(227, 24);
