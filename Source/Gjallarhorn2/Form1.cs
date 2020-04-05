@@ -488,6 +488,150 @@ namespace Gjallarhorn2
 
         #endregion
 
+        #region MD_Keyboard
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛆ";
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛒ";
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛍ";
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛑ";
+        }
+
+        private void button76_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚦ";
+        }
+
+        private void button77_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚧ";
+        }
+
+        private void button78_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛂ";
+        }
+
+        private void button79_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚠ";
+        }
+
+        private void button80_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚵ";
+        }
+
+        private void button81_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚼ";
+        }
+
+        private void button82_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛁ";
+        }
+
+        private void button83_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚴ";
+        }
+
+        private void button84_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛚ";
+        }
+
+        private void button85_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛘ";
+        }
+
+        private void button86_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚿ";
+        }
+
+        private void button87_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚮ";
+        }
+
+        private void button88_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛔ";
+        }
+
+        private void button90_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚱ";
+        }
+
+        private void button91_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛋ";
+        }
+
+        private void button92_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛐ";
+        }
+
+        private void button93_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚢ";
+        }
+
+        private void button94_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚡ";
+        }
+
+        private void button95_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚥ";
+        }
+
+        private void button96_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛪ";
+        }
+
+        private void button97_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛦ";
+        }
+
+        private void button98_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚤ";
+        }
+
+        private void button99_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᛅ";
+        }
+
+        private void button89_Click(object sender, EventArgs e)
+        {
+            keyboardTB.Text += "ᚯ";
+        }
+
+        #endregion
+
     }
 
     //Converter class.
