@@ -22,11 +22,11 @@ If you want your output formatted a certain way, see the settings menu for some 
 
 # Extra Info #
 
-If you're trying to translate into perfect runic script, out might want to check out this article:
+If you're trying to translate letters into perfect runic script, out might want to check out this article:
 https://www.vikingrune.com/write-in-futhark-runes-old-norse-guide/
 It explains some common runic grammar.
 
-When deciphering runes off of relics, this Old Norse dictionary might come in handy:
+When deciphering runes off of rocks and stuff, this Old Norse dictionary might come in handy:
 http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
 
 Possible Upcoming Features:
