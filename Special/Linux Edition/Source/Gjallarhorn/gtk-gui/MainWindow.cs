@@ -38,6 +38,7 @@ public partial class MainWindow
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.fixed1 = new global::Gtk.Fixed();
+		this.fixed1.Name = "fixed1";
 		this.fixed1.HasWindow = false;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
@@ -49,6 +50,7 @@ public partial class MainWindow
 		this.inputTB = new global::Gtk.TextView();
 		this.inputTB.CanFocus = true;
 		this.inputTB.Name = "inputTB";
+		this.inputTB.WrapMode = ((global::Gtk.WrapMode)(3));
 		this.GtkScrolledWindow.Add(this.inputTB);
 		this.fixed1.Add(this.GtkScrolledWindow);
 		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow]));
@@ -64,6 +66,7 @@ public partial class MainWindow
 		this.outputTB = new global::Gtk.TextView();
 		this.outputTB.CanFocus = true;
 		this.outputTB.Name = "outputTB";
+		this.outputTB.WrapMode = ((global::Gtk.WrapMode)(3));
 		this.GtkScrolledWindow1.Add(this.outputTB);
 		this.fixed1.Add(this.GtkScrolledWindow1);
 		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow1]));

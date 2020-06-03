@@ -29,6 +29,7 @@
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
                 <property name="Text" />
+                <property name="WrapMode">WordChar</property>
               </widget>
             </child>
           </widget>
@@ -49,6 +50,7 @@
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
                 <property name="Text" translatable="yes" />
+                <property name="WrapMode">WordChar</property>
               </widget>
             </child>
           </widget>
