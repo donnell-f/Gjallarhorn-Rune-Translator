@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{AF08A18D-BE84-4B88-A5EA-218516BBC566}|Default">
+  <MonoDevelop.Ide.ItemProperties.Gjallarhorn PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gjallarhorn/MainWindow.cs">
+    <Files>
+      <File FileName="Gjallarhorn/Program.cs" Line="13" Column="22" />
+      <File FileName="Gjallarhorn/MainWindow.cs" Line="78" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Gjallarhorn" expanded="True">
+            <Node name="Gjallarhorn" expanded="True">
+              <Node name="UserInterface" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

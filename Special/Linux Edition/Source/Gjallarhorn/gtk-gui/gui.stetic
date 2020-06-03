@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Release/Gjallarhorn.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="967 472">
+    <property name="MemberName" />
+    <property name="WidthRequest">150</property>
+    <property name="HeightRequest">150</property>
+    <property name="Title" translatable="yes">Janky Gjallarhorn</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">400</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="inputTB">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">31</property>
+            <property name="Y">30</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">400</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="outputTB">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">635</property>
+            <property name="Y">30</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="alphabetControl">
+            <property name="MemberName" />
+            <property name="WidthRequest">175</property>
+            <property name="HeightRequest">35</property>
+            <property name="Tooltip">Runic Alphabet</property>
+            <property name="IsTextCombo">True</property>
+            <property name="Items">Elder Futhark
+Younger Futhark
+Anglo Saxon
+Medieval</property>
+          </widget>
+          <packing>
+            <property name="X">399</property>
+            <property name="Y">230</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="directionControl">
+            <property name="MemberName" />
+            <property name="WidthRequest">175</property>
+            <property name="HeightRequest">35</property>
+            <property name="IsTextCombo">True</property>
+            <property name="Items">Letters --&gt; Runes
+Runes --&gt; Letters</property>
+          </widget>
+          <packing>
+            <property name="X">399</property>
+            <property name="Y">279</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.CheckButton" id="aproxBrackets">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Remove aproximation brackets.</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">364</property>
+            <property name="Y">337</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.CheckButton" id="oddLetters">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Aproximate special characters.</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">364</property>
+            <property name="Y">368</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.CheckButton" id="spacesColons">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Label" translatable="yes">Replace spaces with colons.</property>
+            <property name="DrawIndicator">True</property>
+            <property name="HasLabel">True</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">364</property>
+            <property name="Y">399</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button1">
+            <property name="MemberName" />
+            <property name="WidthRequest">175</property>
+            <property name="HeightRequest">25</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Clear</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="clearButton" />
+          </widget>
+          <packing>
+            <property name="X">399</property>
+            <property name="Y">188</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="convButton">
+            <property name="MemberName" />
+            <property name="WidthRequest">175</property>
+            <property name="HeightRequest">50</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Convert</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="convClicked" />
+          </widget>
+          <packing>
+            <property name="X">399</property>
+            <property name="Y">141</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

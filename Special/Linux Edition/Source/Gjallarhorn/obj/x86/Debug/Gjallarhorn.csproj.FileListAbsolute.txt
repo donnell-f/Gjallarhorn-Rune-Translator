@@ -1,0 +1,6 @@
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/obj/x86/Debug/Gjallarhorn.csprojAssemblyReference.cache
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/obj/x86/Debug/Gjallarhorn.csproj.CoreCompileInputs.cache
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/bin/Debug/Gjallarhorn.exe
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/bin/Debug/Gjallarhorn.pdb
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/obj/x86/Debug/Gjallarhorn.exe
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/obj/x86/Debug/Gjallarhorn.pdb

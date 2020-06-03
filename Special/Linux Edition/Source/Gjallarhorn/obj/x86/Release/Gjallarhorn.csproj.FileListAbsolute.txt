@@ -1,0 +1,4 @@
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/bin/Release/Gjallarhorn.exe
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/obj/x86/Release/Gjallarhorn.csproj.CoreCompileInputs.cache
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/obj/x86/Release/Gjallarhorn.exe
+/home/donnell/Desktop/Programming Stuff/C# Projects/Gjallarhorn/Gjallarhorn/obj/x86/Release/Gjallarhorn.csprojAssemblyReference.cache
