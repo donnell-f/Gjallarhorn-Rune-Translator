@@ -29,5 +29,5 @@ It explains some common runic grammar.
 When deciphering runes off of rocks and stuff, this Old Norse dictionary might come in handy:
 http://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm
 
-Possible Upcoming Features:
-- Linux replica
+# A Picture #
+https://ibb.co/sCBj57L
