@@ -18,6 +18,8 @@ Every transliteration goes something like this:
 
 If you want your output formatted a certain way, see the settings menu for some postprocessing options.
 
+Note: The jank Linux version requires GtkSharp.
+
 
 
 # Extra Info #
