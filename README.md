@@ -4,7 +4,7 @@ Gjallarhorn transliterates runes into Roman letters so that you can try to decip
 
 Gjallarhorn transliterates Elder Futhark, Younger Futhark, and Anglo-Saxon Futhorc. The runic alphabets have been designed to transliterate to Old Norse, Old English, and Modern English, though you may find luck with others.
 
-If you have even the slightest critique please report it in the issues tab. Issues are cool, they make me feel like I know what I'm doing.
+If you have even the slightest critique please report it in the issues tab. Issues are cool, they make me feel important.
 
 
 
@@ -18,7 +18,7 @@ Every transliteration goes something like this:
 
 If you want your output formatted a certain way, see the settings menu for some postprocessing options.
 
-Note: The jank Linux version requires GtkSharp.
+Note: The jank Linux version requires GtkSharp and even then it only barely, maybe, possibly will work.
 
 
 
